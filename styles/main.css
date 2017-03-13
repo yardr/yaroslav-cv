@@ -99,7 +99,7 @@ body {
       background-image: url("../graphics/about.png"); }
     .wrap aside .contact-list {
       margin-top: 4%;
-      margin-left: 13.5%;
+      margin-left: 4%;
       list-style-type: none;
       list-style-position: inside; }
       .wrap aside .contact-list li:not(.contact-item1) {
