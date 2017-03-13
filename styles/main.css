@@ -109,7 +109,8 @@ body {
       .wrap aside .contact-list .contact-item2 {
         background-image: url("../graphics/online.png"); }
       .wrap aside .contact-list .contact-item3 {
-        background-image: url("../graphics/mobile.png"); }
+        background-image: url("../graphics/mobile.png");
+        text-decoration: none; }
     .wrap aside .skills {
       background-image: url("../graphics/skills.png"); }
     .wrap aside .skill-wrapper {

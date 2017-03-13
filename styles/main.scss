@@ -136,7 +136,8 @@ body {
             }
             .contact-item3 {
                 @extend %contact;
-                background-image: url("../graphics/mobile.png")
+                background-image: url("../graphics/mobile.png");
+                text-decoration: none;
             }
         }
         .skills {
