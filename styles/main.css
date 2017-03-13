@@ -227,6 +227,8 @@ body {
 @media screen and (max-width: 768px) {
   .wrap aside {
     width: 40%; }
+    .wrap aside .contact-list {
+      margin-left: 1%; }
   .wrap article {
     width: 60%; }
     .wrap article section {
