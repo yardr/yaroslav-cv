@@ -1,0 +1,353 @@
+@import 'partials/_reset';
+/*@import 'partials/_mobile';*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+$sideHead: 1.250em 'Roboto Slab', serif;
+$artcHead: 700 1.5rem 'Roboto Slab', serif;
+$textColor: #ffffff;
+$paragText: 1rem 'Roboto Slab', serif; 
+$subHead: 1.313em 'Roboto Slab', serif;
+html {
+    font-size: 100%;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+%side-heading {
+    display: block;
+    margin-top: 11%;
+    text-transform: uppercase;
+    font: $sideHead;
+    color: $textColor;
+    height: 46px;
+    line-height: 46px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 55px;
+    margin-left: 12%;
+}
+%contact {
+    font: $paragText;
+    color: $textColor;
+    height: 33px;
+    line-height: 33px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    
+}
+%skill {
+    display: block;
+    font: $paragText;
+    color: $textColor;
+    height: 33px;
+    line-height: 33px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+}
+%spanStyles {
+    display: inline-block;
+    padding-left: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #90a4ae;
+    font: 0.875 "Roboto Slab", serif;
+    
+    
+}
+%artcHeader {
+    display: inline-block;
+    font: $artcHead;
+    color: #263238;
+    max-height: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 8%;
+    padding-left: 65px;
+}
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrap {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    aside {
+    background-color: #37474f;
+    width: 35%;
+    height:100%;
+    padding-bottom: 50px;
+        header {
+            padding-top: 3.125em;
+            min-height: 35%;
+            background-color: #263238;
+            text-align: center;
+            text-transform: uppercase;
+            img {
+                width: 50%;
+            }
+            .main-head {
+                padding-top: 20px;
+                padding-bottom: 20px;  
+                font: 500 1.700em/1.700em 'Roboto Slab', serif;
+                color: #fff;
+            }
+        }
+        
+        .aboutme {
+            background-image: url("../graphics/about.png");
+            @extend %side-heading;
+        }
+        .side-paragraph {
+            margin-left: 12%;
+            color: $textColor;
+            font: $paragText;
+            padding-top: 15px;
+            padding-right: 30px;
+            
+        }
+        .contactme {
+            background-image: url("../graphics/about.png");
+            @extend %side-heading;
+        }
+        .contact-list {
+            margin-top: 4%;
+            margin-left: 13.5%;
+            list-style-type: none;
+            list-style-position: inside;
+            li:not(.contact-item1) {
+                margin-top: 20px;
+            }
+            .contact-item1 {
+                @extend %contact;
+                background-image: url("../graphics/address.png");
+            }
+            .contact-item2 {
+                @extend %contact;
+                background-image: url("../graphics/online.png");
+            }
+            .contact-item3 {
+                @extend %contact;
+                background-image: url("../graphics/mobile.png")
+            }
+        }
+        .skills {
+                @extend %side-heading;
+                background-image: url("../graphics/skills.png");
+            }
+        .skill-wrapper {
+            margin-left: 13.5%;
+            margin-top: 4%;
+            .html {
+                @extend %skill;
+                background-image: url("../graphics/htmlpic.png");
+                    
+            }
+            .css3 {
+                @extend %skill;
+                background-image: url("../graphics/css3.png")
+            }
+            .jscript {
+                @extend %skill;
+                background-image: url("../graphics/jscript.png")
+            }
+            .sass {
+                @extend %skill;
+                background-image: url("../graphics/sass-32.png")
+            }
+            .jquery {
+                @extend %skill;
+                background-image: url("../graphics/jquery.png")
+            }
+            .wordpress {
+                @extend %skill;
+                background-image: url("../graphics/wp.png")
+            }
+            .photoshop {
+                @extend %skill;
+                background-image: url("../graphics/ps.png")
+            }
+            #myProgress {
+                width: 65%;
+                background-color: #ddd;
+                margin-left: 40px;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            #myBar {
+                width: 1%;
+                height: 5px;
+                border: 0.5px solid #fff;
+                border-radius: 5px;
+                background-color: #263238;
+            }
+            #myBar2 {
+                @extend #myBar;
+            }
+            #myBar3 {
+                @extend #myBar;
+            }
+            #myBar4 {
+                @extend #myBar;
+            }
+            #myBar5 {
+                @extend #myBar;
+            }
+            #myBar6 {
+                @extend #myBar;
+            }
+            #myBar7 {
+                @extend #myBar;
+            }
+        }
+}
+    article {
+    width: 60%;
+    height:100%;
+        section {
+            margin-left: 10%;
+            .work-header {
+                @extend %artcHeader;
+                background-image: url("../graphics/work.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+            .work-subheader {
+                margin-top: 20px;
+                padding-left: 60px;
+                text-transform: uppercase;
+                font: $subHead;
+                color: #263238;
+            }
+            .co {
+                @extend %spanStyles;
+                margin-left: 9.5%;
+                background-image: url("../graphics/company.png");
+            }
+            .work-period {
+                @extend %spanStyles;
+                margin-left: 10px;
+                background-image: url("../graphics/work-time.png");
+            }
+            .duty-text {
+                margin-left: 9.5%;
+                margin-top: 10px;
+                font: $paragText;
+                color: #263238;
+            }
+            .ed-header {
+                @extend %artcHeader;
+                background-image: url("../graphics/education.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+            .ed-subheader {
+                @extend .work-subheader;
+            }
+            .inst {
+                @extend %spanStyles;
+                margin-left: 60px;
+                background-image: url("../graphics/institution.png");
+            }
+            .study-period {
+                @extend %spanStyles;
+                margin-left: 10px;
+                background-image: url("../graphics/study-time.png");
+            }
+            .study-text {
+                @extend .duty-text;
+            }
+            .lang-header {
+                @extend %artcHeader;
+                background-image: url("../graphics/lang.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+            .lang-box {
+                margin-left: 10%;
+                margin-top: 3%;
+                width: 70%;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                @each $digit in 1, 2, 3 {
+                .lang-#{$digit} {
+                    width: 30%;
+                    height: auto;
+                    text-align: center;
+                }
+            }
+                .desc {
+                    display: block;
+                    width:100%;
+                    padding-top:10px;
+                    
+                }
+            }
+                
+            }
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .wrap {
+        flex-wrap: wrap;
+        margin: 0;
+        align-content: flex-start;
+        aside, article {
+            flex-basis: 100%;
+        }
+        article {
+            section {
+                .lang-box {
+                    flex-direction: column;
+                    align-content: space-between;
+                    div {
+                    flex-basis: 100%;
+                }
+                .desc {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+    aside {
+        width: 40%;
+    }
+    article {
+        width: 60%;
+        section {
+            margin-left: 2%;
+            .work-subheader, .co, .ed-subheader, .inst {
+            margin-left: 2%;
+            
+        }
+            .work-subheader {
+                padding-left: 0;
+            }
+        }
+    }
+    .lang-box img{
+        width:100%;
+        height: auto;
+    }
+}
+}
