@@ -314,10 +314,13 @@ body {
         article {
             section {
                 .lang-box {
-                    flex-direction: column;
                     align-content: space-between;
                     div {
                     flex-basis: 100%;
+                    img {
+                        width: 150px;
+                        height: auto;
+                    }
                 }
                 .desc {
                     padding-bottom: 10px;
