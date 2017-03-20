@@ -15,6 +15,6 @@ move('myBar', 90);
 move('myBar2', 90);
 move('myBar3', 50);
 move('myBar4', 60);
-move('myBar5', 60);
+move('myBar5', 50);
 move('myBar6', 50);
-move('myBar7', 50);
+move('myBar7', 40);

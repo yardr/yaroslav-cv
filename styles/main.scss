@@ -277,12 +277,16 @@ body {
                 margin-top: 3%;
                 width: 70%;
                 display: -webkit-flex;
+                display: -moz-flex;
                 display: flex;
                 -webkit-flex-direction: row;
+                -moz-flex-direction: row;
                 flex-direction: row;
                 -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
                 flex-wrap: wrap;
                 -webkit-justify-content: space-between;
+                -moz-justify-content: space-between;
                 justify-content: space-between;
                 @each $digit in 1, 2, 3 {
                 .lang-#{$digit} {
@@ -306,6 +310,8 @@ body {
 @media screen and (max-width: 480px) {
     .wrap {
         flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
         margin: 0;
         align-content: flex-start;
         aside, article {
@@ -314,6 +320,8 @@ body {
         article {
             section {
                 .lang-box {
+                    -webkit-align-content: space-between;
+                    -moz-align-content: space-between;
                     align-content: space-between;
                     div {
                     flex-basis: 100%;
