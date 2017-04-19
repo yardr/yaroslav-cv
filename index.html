@@ -5,6 +5,8 @@
     <title>Creative Website Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://imakewebthings.github.com/jquery-waypoints/waypoints.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -119,6 +121,33 @@
           </section>
       </article>
     </div>
-    <script type="text/javascript" src="scripts/progress.js"></script>
+    <script type="text/javascript">
+  function move(item, length) {
+  var elem = document.getElementById(item);   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= length) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+        $(function() {
+  $('.skill-wrapper').waypoint(function() {
+move('myBar', 90);
+move('myBar2', 90);
+move('myBar3', 50);
+move('myBar4', 60);
+move('myBar5', 60);
+move('myBar6', 50);
+move('myBar7', 50);
+      }, {
+           offset: '100%'
+         });
+});
+    </script>
 </body>
 </html>
